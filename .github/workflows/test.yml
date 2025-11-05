@@ -18,7 +18,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    # needs: test
+    needs: test #job을 실행하기 위해서는 test라는 job이 먼저 실행
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
